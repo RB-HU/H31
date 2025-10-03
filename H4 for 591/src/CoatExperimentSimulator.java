@@ -12,4 +12,13 @@ public class CoatExperimentSimulator {
         }
         return count;
     }
+    public int[] simulateCoatExperiment(int iterations) {
+        int[] results = new int[iterations];
+        for (int i = 0; i < iterations; i++) {
+            int[] arrangement = RandomOrderGenerator.getRandomOrder(numberOfPeople);
+            results[i] = numPplWhoGotTheirCoat(arrangement);
+        }
+        return results;
+    }
+
 }
