@@ -11,14 +11,27 @@ public class CoatExperimentSimulator {
             }
         }
         return count;
+
     }
     public int[] simulateCoatExperiment(int iterations) {
         int[] results = new int[iterations];
         for (int i = 0; i < iterations; i++) {
+            // 正确调用静态方法
             int[] arrangement = RandomOrderGenerator.getRandomOrder(numberOfPeople);
             results[i] = numPplWhoGotTheirCoat(arrangement);
         }
         return results;
     }
+
+    public double answerToQuestionOne(int[] results) {
+        int countZero = 0;
+        for (int result : results) {
+            if (result == 0) {
+                countZero++;
+            }
+        }
+        return (double) countZero / results.length;
+    }
+
 
 }
