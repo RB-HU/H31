@@ -115,7 +115,7 @@ import java.util.Scanner;
             for(int i=0; i<positions.length;i++) {
                 int pos=positions[i];
                 if(card[pos] != null) {
-                    hand.add(card[pos]);
+                    hand.add(card[pos])
                 }
             }
 
