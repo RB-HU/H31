@@ -13,7 +13,7 @@ public class Card {
         private int calculateValue(String rank) {
             if (rank.equals("A"))
             {
-                return 1;
+                return 100;
             }
             else if (rank.equals("J")||rank.equals("Q")||rank.equals("K")) {
                 return 10;
