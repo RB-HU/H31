@@ -5,7 +5,7 @@ public class Card {
         private int value;
 
         public Card(String suit, String rank) {
-            this.suit=suit;
+            this.suit=suit;;
             this.rank=rank;
             this.value=calculateValue(rank);
         }
